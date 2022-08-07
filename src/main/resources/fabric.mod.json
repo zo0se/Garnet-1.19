@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "garnet",
+  "version": "0.0.1-1.19",
+
+  "name": "Garnet",
+  "description": "this is my first mod",
+  "authors": [
+    "chi"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.Archive.garnet.Garnet"
+    ],
+    "client": [
+      "net.Archive.garnet.GarnetClient"
+    ]
+  },
+  "mixins": [
+    "garnet.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
